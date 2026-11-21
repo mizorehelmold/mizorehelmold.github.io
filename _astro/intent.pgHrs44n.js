@@ -1,0 +1,1 @@
+var e=NaN,t=NaN,n=0;typeof window<`u`&&addEventListener(`pointermove`,r=>{r.pointerType===`mouse`&&((r.clientX!==e||r.clientY!==t)&&(n=performance.now()),e=r.clientX,t=r.clientY)},{capture:!0,passive:!0});function r(r){return r.pointerType===`mouse`?Number.isNaN(e)?!0:r.clientX!==e||r.clientY!==t||performance.now()-n<80:!1}export{r as t};
